@@ -1,0 +1,165 @@
+/* font-family: 'Big Shoulders Display',
+cursive;
+font-family: 'Lexend Deca',
+sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Mobile-First - Main */
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+.dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+    ;
+}
+
+.very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.picture {
+    width: 20%;
+    padding-bottom: 5%;
+}
+
+.type-car {
+    padding: 5% 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.2em;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.text-info {
+    padding: 5% 0;
+    padding-right: 10%;
+    line-height: 150%;
+    font-size: 1.1em;
+}
+
+.buttom {
+    display: inline-block;
+    margin-top: 5%;
+    padding: 10px 20px;
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+}
+
+.attribution {
+    display: none;
+}
+
+@media (orientation:landscape) {
+    .container {
+        max-height: 100vh;
+    }
+
+    .picture {
+        width: 10%;
+        padding-bottom: 2%;
+    }
+
+    .type-car {
+        padding: 2% 0;
+        font-size: 2.2em;
+    }
+
+    .text-info {
+        padding: 2% 0;
+    }
+
+    .attribution {
+        display: block;
+        margin: 0 auto;
+        max-width: 32vw;
+        padding: 10px 20px;
+        font-size: 1.0em;
+        color: hsl(0, 0%, 95%);
+        text-align: center;
+        background-color: hsl(184, 100%, 22%);
+        text-decoration: none;
+        text-transform: capitalize;
+        border: 2px solid hsl(0, 0%, 95%);
+        border-radius: 50px;
+    }
+
+    .attribution a {
+
+        color: hsl(31, 77%, 52%);
+
+    }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+    .main {
+        margin: 10% 10%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    .picture {
+        width: 30%;
+        padding-bottom: 5%;
+    }
+
+    .type-car {
+        padding: 5% 0;
+        font-size: 2.6em;
+    }
+
+    .text-info {
+        padding: 5% 0;
+    }
+
+    .buttom {
+        margin-top: 20%;
+        transition: 0.5s;
+    }
+
+    .buttom:hover {
+        color: hsl(0, 0%, 95%);
+        background-color: transparent;
+        border: 2px solid hsl(0, 0%, 95%);
+    }
+}
